@@ -1372,6 +1372,7 @@ class Level implements ChunkManager, Metadatable{
 		$block->y = $y;
 		$block->z = $z;
 		$block->level = $this;
+		$block->updateState();
 
 		if($addToCache and $blockHash !== null){
 			$this->blockCache[$chunkHash][$blockHash] = $block;
