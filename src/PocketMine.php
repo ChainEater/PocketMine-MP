@@ -144,7 +144,7 @@ namespace pocketmine {
 	if(\Phar::running(true) !== ""){
 		define('pocketmine\PATH', \Phar::running(true) . "/");
 	}else{
-		define('pocketmine\PATH', dirname(__FILE__, 3) . DIRECTORY_SEPARATOR);
+		define('pocketmine\PATH', dirname(__FILE__, 2) . DIRECTORY_SEPARATOR);
 	}
 
 	$opts = getopt("", ["bootstrap:"]);
@@ -181,7 +181,7 @@ namespace pocketmine {
 	ini_set("memory_limit", '-1');
 	define('pocketmine\START_TIME', microtime(true));
 
-	define('pocketmine\RESOURCE_PATH', \pocketmine\PATH . 'src' . DIRECTORY_SEPARATOR . 'pocketmine' . DIRECTORY_SEPARATOR . 'resources' . DIRECTORY_SEPARATOR);
+	define('pocketmine\RESOURCE_PATH', \pocketmine\PATH . 'src' . DIRECTORY_SEPARATOR . 'resources' . DIRECTORY_SEPARATOR);
 
 	$opts = getopt("", ["data:", "plugins:", "no-wizard"]);
 

@@ -12,8 +12,8 @@ if exist bin\php\php.exe (
 if exist PocketMine-MP.phar (
 	set POCKETMINE_FILE=PocketMine-MP.phar
 ) else (
-	if exist src\pocketmine\PocketMine.php (
-		set POCKETMINE_FILE=src\pocketmine\PocketMine.php
+	if exist src\PocketMine.php (
+		set POCKETMINE_FILE=src\PocketMine.php
 	) else (
 		echo Couldn't find a valid PocketMine-MP installation
 		pause

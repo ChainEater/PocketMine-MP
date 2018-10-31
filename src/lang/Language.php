@@ -35,7 +35,7 @@ class Language{
 	 */
 	public static function getLanguageList(string $path = "") : array{
 		if($path === ""){
-			$path = \pocketmine\PATH . "src/pocketmine/lang/locale/";
+			$path = \pocketmine\PATH . "src/lang/locale/";
 		}
 
 		if(is_dir($path)){
@@ -82,7 +82,7 @@ class Language{
 		$this->langName = strtolower($lang);
 
 		if($path === null){
-			$path = \pocketmine\PATH . "src/pocketmine/lang/locale/";
+			$path = \pocketmine\PATH . "src/lang/locale/";
 		}
 
 		$this->lang = self::loadLang($path, $this->langName);

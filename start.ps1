@@ -18,8 +18,8 @@ if($php -ne ""){
 if($file -eq ""){
 	if(Test-Path "PocketMine-MP.phar"){
 	    $file = "PocketMine-MP.phar"
-	}elseif(Test-Path "src\pocketmine\PocketMine.php"){
-	    $file = "src\pocketmine\PocketMine.php"
+	}elseif(Test-Path "src\PocketMine.php"){
+	    $file = "src\PocketMine.php"
 	}else{
 	    echo "Couldn't find a valid PocketMine-MP installation"
 	    pause
